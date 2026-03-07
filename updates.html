@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="images/saasier-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="ga-measurement-id" content="" />
 </head>
 <body>
   <header>
@@ -100,5 +101,25 @@ document.addEventListener('click', function (e) {
   });
 });
 </script>
+
+<script>
+(function () {
+  var meta = document.querySelector('meta[name="ga-measurement-id"]');
+  var id = (meta && meta.content || '').trim();
+  if (!id || typeof window.gtag === 'function') return;
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', id, { page_path: window.location.pathname });
+
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
+  document.head.appendChild(s);
+})();
+</script>
+
 </body>
 </html>
