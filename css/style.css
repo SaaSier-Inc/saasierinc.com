@@ -73,6 +73,11 @@ body {
   padding: 0 24px;
 }
 
+.page-main {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
 /* Header Styles */
 header {
   position: fixed;
@@ -781,6 +786,10 @@ footer a:hover {
   .hero {
     text-align: center;
     padding-top: 100px;
+  }
+
+  .page-main {
+    padding-top: 8.5rem;
   }
 
   .hero-buttons {
