@@ -27,6 +27,7 @@
         <li><a href="/updates.html">Updates</a></li>
         <li><a href="/investor-page.html">Investors</a></li>
         <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/updates.html">Updates</a></li>
       </ul>
     </nav>
   </header>
@@ -87,5 +88,17 @@
   </main>
 
   <script src="js/menu.js"></script>
+
+<script>
+document.addEventListener('click', function (e) {
+  const link = e.target.closest('a');
+  if (!link || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'cta_click', {
+    cta_text: (link.textContent || '').trim().slice(0, 80),
+    cta_href: link.getAttribute('href') || '',
+    page_path: window.location.pathname
+  });
+});
+</script>
 </body>
 </html>

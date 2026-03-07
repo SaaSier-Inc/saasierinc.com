@@ -108,7 +108,7 @@
                             <img src="images/hive-minded-icon.png" alt="Hive Minded AI Logo" width="80" height="80" loading="lazy">
                         </div>
                         <h3>Hive Minded AI</h3>
-                        <p>A bee keeping and apiary management AI native application.</p>
+                        <p>Intelligent infrastructure for developers building AI-powered applications through simple APIs and developer-friendly tooling.</p>
                         <a href="https://hiveminded.ai/" class="learn-more" target="_blank"
                             rel="noopener noreferrer">Explore Hive Minded AI</a>
                     </div>
@@ -363,6 +363,18 @@
             ]
         }
     }
+    </script>
+
+    <script>
+      document.addEventListener('click', function (e) {
+        const link = e.target.closest('a');
+        if (!link || typeof window.gtag !== 'function') return;
+        window.gtag('event', 'cta_click', {
+          cta_text: (link.textContent || '').trim().slice(0, 80),
+          cta_href: link.getAttribute('href') || '',
+          page_path: window.location.pathname
+        });
+      });
     </script>
 </body>
 
