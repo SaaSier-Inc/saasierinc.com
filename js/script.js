@@ -7,15 +7,27 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenuBtn.addEventListener("click", () => {
       mobileMenuBtn.classList.toggle("active");
       navMenu.classList.toggle("active");
-      document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : "";
+      const expanded = navMenu.classList.contains("active");
+      mobileMenuBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+      document.body.style.overflow = expanded ? "hidden" : "";
     });
 
     document.querySelectorAll(".nav-links a").forEach((link) => {
       link.addEventListener("click", () => {
         mobileMenuBtn.classList.remove("active");
         navMenu.classList.remove("active");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
         document.body.style.overflow = "";
       });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && navMenu.classList.contains("active")) {
+        mobileMenuBtn.classList.remove("active");
+        navMenu.classList.remove("active");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      }
     });
   }
 
