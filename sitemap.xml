@@ -49,9 +49,39 @@
       <priority>0.8</priority>
    </url>
    <url>
+      <loc>https://saasierinc.com/q1-2026-portfolio-update.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
       <loc>https://saasierinc.com/portfolio-milestone-q1-2026-operating-system.html</loc>
       <lastmod>2026-03-08</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/founder-note-services-to-product-flywheel.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/portfolio-update-q4-2025.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/portfolio-update-q3-2025.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/portfolio-update-q2-2025.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
    </url>
 </urlset>

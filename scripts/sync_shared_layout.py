@@ -19,6 +19,7 @@ PAGES = {
     "portfolio-update-q3-2025.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
     "portfolio-update-q2-2025.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
     "founder-note-services-to-product-flywheel.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
+    "portfolio-milestone-q1-2026-operating-system.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
 }
 
 NAV_ITEMS = [
