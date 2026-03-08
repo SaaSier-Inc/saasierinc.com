@@ -42,4 +42,16 @@
       <changefreq>yearly</changefreq>
       <priority>0.5</priority>
    </url>
+   <url>
+      <loc>https://saasierinc.com/updates.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/portfolio-milestone-q1-2026-operating-system.html</loc>
+      <lastmod>2026-03-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>
