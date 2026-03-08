@@ -6,20 +6,20 @@ from pathlib import Path
 
 PAGES = {
     "index.html": {"current": "home", "companies_href": "#portfolio"},
-    "about.html": {"current": "about", "companies_href": "/index.html#portfolio"},
-    "contact.html": {"current": "contact", "companies_href": "/index.html#portfolio"},
-    "investor-page.html": {"current": "investors", "companies_href": "/index.html#portfolio"},
-    "press.html": {"current": "press", "companies_href": "/index.html#portfolio"},
-    "privacy-policy.html": {"current": None, "companies_href": "/index.html#portfolio"},
-    "terms-of-service.html": {"current": None, "companies_href": "/index.html#portfolio"},
-    "404.html": {"current": None, "companies_href": "/index.html#portfolio"},
-    "updates.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "q1-2026-portfolio-update.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "portfolio-update-q4-2025.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "portfolio-update-q3-2025.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "portfolio-update-q2-2025.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "founder-note-services-to-product-flywheel.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
-    "portfolio-milestone-q1-2026-operating-system.html": {"current": "updates", "companies_href": "/index.html#portfolio"},
+    "about.html": {"current": "about", "companies_href": "/#portfolio"},
+    "contact.html": {"current": "contact", "companies_href": "/#portfolio"},
+    "investor-page.html": {"current": "investors", "companies_href": "/#portfolio"},
+    "press.html": {"current": "press", "companies_href": "/#portfolio"},
+    "privacy-policy.html": {"current": None, "companies_href": "/#portfolio"},
+    "terms-of-service.html": {"current": None, "companies_href": "/#portfolio"},
+    "404.html": {"current": None, "companies_href": "/#portfolio"},
+    "updates.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "q1-2026-portfolio-update.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "portfolio-update-q4-2025.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "portfolio-update-q3-2025.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "portfolio-update-q2-2025.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "founder-note-services-to-product-flywheel.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "portfolio-milestone-q1-2026-operating-system.html": {"current": "updates", "companies_href": "/#portfolio"},
 }
 
 NAV_ITEMS = [
@@ -34,7 +34,7 @@ NAV_ITEMS = [
 
 FOOTER = """<footer>
     <div class="container">
-        <p>&copy; 2025 SaaSier Inc. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> |
+        <p>&copy; 2026 SaaSier Inc. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> |
             <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
         </p>
         <div class="social-links">

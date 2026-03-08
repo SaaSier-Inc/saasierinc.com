@@ -641,6 +641,13 @@ section h2 {
   font-weight: 500;
 }
 
+.contact-info p:last-child,
+.news-item p:last-child,
+.value-card p:last-child,
+.company-card p:last-child {
+  margin-bottom: 0;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -709,6 +716,65 @@ section h2 {
 .submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.next-step-panel {
+  padding: 2.5rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.18), transparent 35%),
+    linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  box-shadow: var(--shadow);
+}
+
+.next-step-panel h2,
+.next-step-panel h3 {
+  width: auto;
+  display: block;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.next-step-panel p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.next-step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.next-step-card {
+  display: block;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  transition: var(--transition);
+}
+
+.next-step-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.28);
+  box-shadow: var(--shadow);
+}
+
+.next-step-card strong {
+  display: block;
+  color: var(--primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.next-step-card span {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Footer */
@@ -795,6 +861,10 @@ footer a:hover {
   .hero-buttons {
     flex-direction: column;
     padding: 0 2rem;
+  }
+
+  .next-step-panel {
+    padding: 2rem;
   }
 
   .company-card {
