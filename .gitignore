@@ -15,3 +15,7 @@ Thumbs.db
 
 # Local config (if any)
 .local/
+
+# Python cache files
+__pycache__/
+*.py[cod]

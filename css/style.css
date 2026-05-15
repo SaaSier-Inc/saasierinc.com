@@ -371,6 +371,34 @@ section h2 {
   line-height: 1.7;
 }
 
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 760px;
+  margin: -1rem auto 3rem;
+  font-size: 1.05rem;
+}
+
+.text-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  box-shadow: var(--shadow);
+}
+
+.product-assets {
+  background: var(--bg-secondary);
+}
+
 .learn-more {
   display: inline-block;
   padding: 0.75rem 1.5rem;
