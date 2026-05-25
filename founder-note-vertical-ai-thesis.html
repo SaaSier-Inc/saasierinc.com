@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Founder Note: Why Vertical AI | SaaSier Inc</title>
+  <meta name="description" content="A founder note from SaaSier Inc on the vertical AI thesis — why domain-specific AI beats horizontal solutions for niche industries like beekeeping, and how we think about the build vs. buy landscape." />
+  <link rel="canonical" href="https://saasierinc.com/founder-note-vertical-ai-thesis.html" />
+  <link rel="icon" type="image/png" href="images/saasier-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="images/saasier-logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <meta property="og:title" content="Founder Note: Why Vertical AI | SaaSier Inc" />
+  <meta property="og:description" content="A founder note from SaaSier Inc on the vertical AI thesis — why domain-specific AI beats horizontal solutions for niche industries like beekeeping." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://saasierinc.com/founder-note-vertical-ai-thesis.html" />
+  <meta property="og:image" content="https://saasierinc.com/images/saasier-logo.png" />
+  <meta property="article:published_time" content="2026-06-15" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self' mailto:" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <nav>
+        <a href="/" class="logo">
+            <img src="images/saasier-logo.png" alt="SaaSier Inc" height="80">
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/#portfolio">Companies</a></li>
+                <li><a href="/investor-page.html">Investors</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/updates.html" aria-current="page">Updates</a></li>
+                <li><a href="/press.html">Press</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main id="main-content" class="container page-main" style="max-width: 900px;">
+    <p style="color:#666; font-size:0.9rem;">June 15, 2026</p>
+    <h1>Founder Note: Why Vertical AI</h1>
+    <p style="font-style: italic; color: #555;">A founder note on the thinking behind Hive Minded AI, and why we chose vertical AI for beekeeping over building something horizontal.</p>
+
+    <h2>The question that keeps coming up</h2>
+    <p>"Why build a whole platform for beekeeping?" It's the first question almost everyone asks when they hear about Hive Minded AI. The answer has three parts, and none of them is "because beekeeping is cute" — though it is, and that doesn't hurt.</p>
+
+    <h2>1. Horizontal tools hit a wall at domain depth</h2>
+    <p>Generic farm management software can track inventory and log tasks. It cannot tell you that the pattern of brood comb you photographed matches a specific Varroa mite threshold, or that the weather forecast for Tuesday means you should move an inspection window forward two days for a particular yard.</p>
+    <p>That kind of reasoning requires domain models — representations of colony lifecycle, disease progression curves, treatment intervals, pollination contract math, and honey flow timing. A horizontal tool will never build those because the economics don't work. The addressable market for "general farming software plus beekeeping module" is a rounding error compared to row crops and livestock.</p>
+    <p>So operators are left stitching together spreadsheets, paper notes, and sensor vendor dashboards. The data exists but it doesn't connect. Colony health lives in one place, treatment costs in another, and pollination contract terms in an email thread.</p>
+
+    <h2>2. The domain is underserved relative to its economic weight</h2>
+    <p>Pollination-dependent crops account for roughly one-third of the food supply in the US. The almond industry alone requires more than 2 million hives every February. Those hives travel thousands of miles a year on flatbed trucks, face disease pressure from concentrated operations, and are managed by a workforce that is aging and hard to replace.</p>
+    <p>Despite that economic footprint, the software available to a commercial beekeeper in 2026 is not much better than what was available in 2010. The incumbents are single-purpose tools — hive scale dashboards, disease ID apps, accounting software that was never designed for migratory apiary operations. Nobody has built the integrated operating system because beekeeping looks small from a distance and the domain knowledge barrier is real.</p>
+
+    <h2>3. AI changes the feasibility equation</h2>
+    <p>A few years ago, building a vertical platform like this meant either (a) spending years on rules-based expert systems that could never keep up with the complexity of real colony biology, or (b) hiring a team of ML engineers to train bespoke models for every detection task.</p>
+    <p>Foundation models change that calculus. A single set of models, fine-tuned on beekeeping-specific data, can handle visual disease detection, natural language inspection dictation, predictive health alerts, and natural-language querying of colony records. The cost to build the intelligent layer dropped by an order of magnitude, and the quality of the output is better than what the rules-based approach could achieve.</p>
+    <p>That's the narrow window we are building in: domain depth that horizontal tools cannot reach, wrapped in an AI layer that was not possible five years ago, for a market that is larger than it looks from a spreadsheet.</p>
+
+    <h2>What this means for how we build</h2>
+    <p>The vertical AI thesis informs more than just product direction — it shapes how we hire, how we prioritize, and how we think about defensibility.</p>
+    <ul>
+      <li><strong>Domain expertise is the moat.</strong> The AI models are accessible to anyone. The data from real colony inspections and the operator workflow patterns that emerge from it are not.</li>
+      <li><strong>Voice and offline are not nice-to-haves.</strong> They are core requirements when the user is wearing gloves in a bee yard without cell service. Horizontal tools treat these as edge cases.</li>
+      <li><strong>The business model should mirror the operator's scale.</strong> A hobbyist with five hives and a commercial operator with 5,000 need the same core workflow, but the value they extract is completely different. The pricing reflects that — free trial for evaluation, Pro for serious hobbyists and small businesses, Commercial for operations where the platform replaces a material share of administrative overhead.</li>
+    </ul>
+
+    <p><a href="/updates.html">← Back to Updates</a></p>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2026 SaaSier Inc. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> |
+            <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/saasierinc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Founder Note: Why Vertical AI",
+    "description": "A founder note from SaaSier Inc on the vertical AI thesis — why domain-specific AI beats horizontal solutions for niche industries like beekeeping.",
+    "datePublished": "2026-06-15",
+    "dateModified": "2026-06-15",
+    "author": {
+      "@type": "Organization",
+      "name": "SaaSier Inc"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SaaSier Inc",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://saasierinc.com/images/saasier-logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://saasierinc.com/founder-note-vertical-ai-thesis.html"
+  }
+  </script>
+</body>
+</html>

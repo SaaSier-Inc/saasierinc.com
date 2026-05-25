@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
+      <loc>https://saasierinc.com/hive-minded-pilot-launch-q2-2026.html</loc>
+      <lastmod>2026-05-28</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/founder-note-vertical-ai-thesis.html</loc>
+      <lastmod>2026-06-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/q2-2026-portfolio-update.html</loc>
+      <lastmod>2026-07-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://saasierinc.com/mockforge-development-update-aug-2026.html</loc>
+      <lastmod>2026-08-12</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
       <loc>https://saasierinc.com/</loc>
-      <lastmod>2026-05-15</lastmod>
+      <lastmod>2026-08-12</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
@@ -44,7 +68,7 @@
    </url>
    <url>
       <loc>https://saasierinc.com/updates.html</loc>
-      <lastmod>2026-05-15</lastmod>
+      <lastmod>2026-08-12</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>

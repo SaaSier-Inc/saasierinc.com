@@ -20,6 +20,10 @@ PAGES = {
     "portfolio-update-q2-2025.html": {"current": "updates", "companies_href": "/#portfolio"},
     "founder-note-services-to-product-flywheel.html": {"current": "updates", "companies_href": "/#portfolio"},
     "portfolio-milestone-q1-2026-operating-system.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "hive-minded-pilot-launch-q2-2026.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "founder-note-vertical-ai-thesis.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "q2-2026-portfolio-update.html": {"current": "updates", "companies_href": "/#portfolio"},
+    "mockforge-development-update-aug-2026.html": {"current": "updates", "companies_href": "/#portfolio"},
 }
 
 NAV_ITEMS = [
