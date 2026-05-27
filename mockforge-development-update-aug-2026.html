@@ -49,23 +49,23 @@
 </header>
 
   <main id="main-content" class="container page-main" style="max-width: 900px;">
-    <p style="color:#666; font-size:0.9rem;">May 15, 2026</p>
+    <p style="color:#666; font-size:0.9rem;">Planned for August 2026</p>
     <h1>MockForge Development Update: Protocol Expansions and Beta Program</h1>
-    <p>MockForge shipped several major milestones through the summer. Protocol coverage expanded, the AI data synthesis pipeline was upgraded, and the beta program structure is now finalized. Here is where things stand.</p>
+    <p>This planned update will cover the protocol expansion work, AI data synthesis upgrades, and beta program structure expected for the next MockForge development cycle.</p>
 
     <h2>GraphQL subscriptions and WebSocket event streaming</h2>
-    <p>Both moved from experimental to stable. MockForge can now simulate subscription-based data flows: real-time updates, notification streams, and live dashboard feeds driven by configurable event narratives. Teams testing event-driven architectures can define multi-message sequences with varying payload shapes, timing intervals, and error scenarios without wiring up a real backend.</p>
-    <p>The WebSocket streaming engine supports the same narrative-driven event model, which means a single MockForge configuration can drive both GraphQL subscription responses and raw WebSocket messages from the same simulated data set.</p>
+    <p>The planned milestone is stable simulation for subscription-based data flows: real-time updates, notification streams, and live dashboard feeds driven by configurable event narratives.</p>
+    <p>The WebSocket streaming engine is planned to use the same narrative-driven event model, so a single MockForge configuration can drive both GraphQL subscription responses and raw WebSocket messages.</p>
 
     <h2>gRPC bidirectional streaming record-and-replay</h2>
-    <p>Teams using gRPC for inter-service communication can now record real gRPC bidirectional streams from a live environment and replay them deterministically in testing. This closes a gap that has been a recurring pain point for teams doing integration testing of streaming RPC services — you could mock unary calls, but stateful bidirectional streams required either a real peer or a hand-rolled test server.</p>
+    <p>The planned gRPC milestone is record-and-replay support for bidirectional streams, closing a gap for teams testing stateful RPC services without wiring up a real peer.</p>
 
     <h2>AI data synthesis upgrades</h2>
-    <p>MockForge's AI-powered data generation was upgraded to use RAG-based context-aware field inference. Instead of generating random-but-plausible-looking data, the synthesis engine can now reference existing schemas, example payloads, and any context documents you provide. Field distributions, value ranges, and format constraints are inferred from the supplied references rather than guessed.</p>
-    <p>The deterministic seeding system was also expanded, making it possible to reproduce a specific data set across test runs — useful for both debugging and CI pipeline consistency.</p>
+    <p>The planned AI data generation upgrade will use RAG-based context-aware field inference. Instead of generating random-but-plausible-looking data, the synthesis engine will reference schemas, example payloads, and context documents.</p>
+    <p>The deterministic seeding system is also planned for expansion so teams can reproduce specific data sets across test runs.</p>
 
     <h2>Beta program</h2>
-    <p>The beta program structure is finalized and onboarding will open this quarter. The beta is designed for teams that want early access to the admin UI, AI synthesis, and protocol simulation features ahead of the public launch.</p>
+    <p>The beta program structure is being prepared for teams that want early access to the admin UI, AI synthesis, and protocol simulation features ahead of the public launch.</p>
     <ul>
       <li>All protocol simulation features available during beta.</li>
       <li>Admin UI access with server management, metrics dashboards, and config editing.</li>
@@ -107,8 +107,8 @@
     "@type": "Article",
     "headline": "MockForge Development Update: Protocol Expansions and Beta Program",
     "description": "MockForge adds stable GraphQL subscription simulation, gRPC bidirectional streaming record-and-replay, and RAG-based AI data synthesis as the beta program takes shape.",
-    "datePublished": "2026-08-12",
-    "dateModified": "2026-08-12",
+    "datePublished": "2026-05-27",
+    "dateModified": "2026-05-27",
     "author": {
       "@type": "Organization",
       "name": "SaaSier Inc"

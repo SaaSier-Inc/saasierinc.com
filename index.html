@@ -59,38 +59,44 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <div class="hero-visual">
-                <div class="floating-card">
-                    <div class="card-icon">
-                        <img src="images/hive-minded-icon.png" alt="Hive Minded AI logo - AI-powered apiary management" width="60" height="60">
-                    </div>
-                    <div class="card-text">Hive Minded AI</div>
-                </div>
-                <div class="floating-card">
-                    <div class="card-icon">
-                        <img src="images/mockforge-icon.png" alt="MockForge logo - Open-source API mocking platform" width="60" height="60">
-                    </div>
-                    <div class="card-text">MockForge</div>
-                </div>
-                <div class="floating-card">
-                    <div class="card-icon">
-                        <img src="images/saasy-solutions.png" alt="SaaSy Solutions logo - Cloud-agnostic SaaS platform" width="60" height="60">
-                    </div>
-                    <div class="card-text">SaaSy Solutions</div>
-                </div>
+            <div class="hero-visual portfolio-map" aria-hidden="true">
+                <div class="map-core">SaaSier Inc</div>
+                <div class="map-node map-node-ai">Vertical AI<br><span>Hive Minded AI</span></div>
+                <div class="map-node map-node-dev">Developer tooling<br><span>MockForge + CodeDig</span></div>
+                <div class="map-node map-node-services">Consulting delivery<br><span>SaaSy Solutions</span></div>
+                <div class="map-node map-node-platform">Reusable workflows<br><span>HelloSaaSy.ai</span></div>
             </div>
             <div class="container">
-                <h1>Focused software companies, practical AI platforms, and consulting paths that turn real operating pain into products.</h1>
-                <p>SaaSier Inc is a women-owned portfolio company building focused software businesses across vertical AI, developer tooling, consulting delivery, and reusable SaaS infrastructure. Learn more about our <a href="/about.html">company story</a>, <a href="#portfolio">our companies</a>, or <a href="/contact.html">get in touch</a>.</p>
+                <h1>Focused software companies built around specific operating problems.</h1>
+                <p>SaaSier Inc builds and supports vertical AI, developer tooling, consulting delivery, and reusable SaaS workflow assets.</p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="cta-button">Explore Our Companies</a>
-                    <a href="/about.html" class="secondary-button">About Us</a>
+                    <a href="#portfolio" class="cta-button">Explore Companies</a>
+                    <a href="/investor-page.html" class="secondary-button">Investor Overview</a>
                 </div>
-                <div class="hero-buttons" style="margin-top: 1rem; flex-wrap: wrap;">
-                    <a href="/investor-page.html" class="secondary-button">For Investors</a>
-                    <a href="/contact.html" class="secondary-button">For Partners</a>
-                    <a href="#portfolio" class="secondary-button">For Customers</a>
-                    <a href="/updates.html" class="secondary-button">Portfolio Updates</a>
+            </div>
+        </section>
+
+        <!-- Audience Routing -->
+        <section class="audience-routing" aria-labelledby="audience-routing-title">
+            <div class="container">
+                <h2 id="audience-routing-title">Start with the right context</h2>
+                <div class="routing-grid">
+                    <a href="/investor-page.html" class="routing-link">
+                        <span>Investors</span>
+                        <strong>Review the portfolio model, current stage, and operating priorities.</strong>
+                    </a>
+                    <a href="/contact.html" class="routing-link">
+                        <span>Partners</span>
+                        <strong>Open a conversation about consulting, distribution, or product collaboration.</strong>
+                    </a>
+                    <a href="#portfolio" class="routing-link">
+                        <span>Customers</span>
+                        <strong>Find the company or active product that matches your workflow.</strong>
+                    </a>
+                    <a href="/updates.html" class="routing-link">
+                        <span>Updates</span>
+                        <strong>Read the latest operating notes and planned portfolio milestones.</strong>
+                    </a>
                 </div>
             </div>
         </section>
@@ -153,6 +159,36 @@
             </div>
         </section>
 
+        <!-- Product Evidence Section -->
+        <section id="product-evidence" class="product-evidence">
+            <div class="container">
+                <h2>Product evidence</h2>
+                <p class="section-subtitle">Concrete product artifacts communicate more than portfolio language. These are the proof points to keep visible as each product matures.</p>
+                <div class="evidence-grid">
+                    <article class="evidence-item evidence-featured">
+                        <span>Hive Minded AI</span>
+                        <h3>Apiary operating loop</h3>
+                        <p>Inspection notes, colony health signals, treatment timing, and business planning connect into one field-ready workflow.</p>
+                    </article>
+                    <article class="evidence-item">
+                        <span>MockForge</span>
+                        <h3>Protocol coverage matrix</h3>
+                        <p>HTTP, gRPC, WebSocket, GraphQL, Kafka, MQTT, AMQP, SMTP, FTP, and TCP simulation support.</p>
+                    </article>
+                    <article class="evidence-item">
+                        <span>CodeDig</span>
+                        <h3>PR risk readout</h3>
+                        <p>Blast-radius analysis surfaces risky pull requests before they reach production.</p>
+                    </article>
+                    <article class="evidence-item">
+                        <span>HelloSaaSy.ai</span>
+                        <h3>Services-to-workflow bridge</h3>
+                        <p>Repeatable consulting delivery patterns become reusable AI-native SaaS workflows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
@@ -161,11 +197,11 @@
                     <div class="about-text">
                         <p>SaaSier Inc is a women-owned holding company dedicated to fostering innovation through
                             specialized software companies. Founded with the vision of creating practical leverage across
-                            multiple technology domains, we operate at the intersection of artificial intelligence, developer
-                            tooling, consulting delivery, and scalable platform solutions.</p>
-                        <p>Our approach leverages the strengths of each subsidiary while promoting cross-pollination of
-                            ideas and technologies, creating a robust ecosystem of interconnected innovations. As a
-                            woman-owned business, we're committed to diversity and inclusion in the tech industry.</p>
+                            specific customer workflows, we operate across artificial intelligence, developer
+                            tooling, consulting delivery, and reusable SaaS infrastructure.</p>
+                        <p>Each company keeps a clear buyer and product focus while sharing the systems that improve
+                            delivery quality, messaging, and technical discipline. As a woman-owned business, we're
+                            committed to durable, inclusive company building.</p>
                     </div>
                     <div class="leadership">
                         <h3>Leadership</h3>
@@ -193,10 +229,9 @@
             <div class="container">
                 <h2>Our Vision</h2>
                 <div class="vision-content">
-                    <p>We envision a future where specialized SaaS companies can thrive independently while benefiting
-                        from shared resources, expertise, and synergistic opportunities. Our approach allows each
-                        company to maintain its unique identity and market focus while leveraging the collective
-                        strength of the SaaSier ecosystem.</p>
+                    <p>We envision a portfolio where specialized SaaS companies stay narrow in their markets while
+                        sharing the operating standards, infrastructure, and distribution lessons that help them
+                        move faster.</p>
                     <div class="vision-goals">
                         <div class="goal">
                             <h3>Innovation</h3>
@@ -204,7 +239,7 @@
                         </div>
                         <div class="goal">
                             <h3>Collaboration</h3>
-                            <p>Fostering synergies between our companies</p>
+                            <p>Sharing what works across companies</p>
                         </div>
                         <div class="goal">
                             <h3>Growth</h3>
@@ -219,34 +254,42 @@
         <section id="news" class="recent-news">
             <div class="container">
                 <h2>Recent News</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <div class="date">August 2026</div>
-                        <h3>MockForge Development Update: Protocol Expansions and Beta Program</h3>
-                        <p>MockForge shipped GraphQL subscriptions, gRPC bidirectional streaming, and RAG-based AI data synthesis. Beta program onboarding opens this quarter.</p>
-                        <a href="/mockforge-development-update-aug-2026.html" class="read-more">Read Full Update →</a>
-                    </div>
+                <div class="update-timeline">
+                    <article class="update-row planned-update">
+                        <div class="date">Planned for August 2026</div>
+                        <div>
+                            <h3>MockForge Development Update: Protocol Expansions and Beta Program</h3>
+                            <p>GraphQL subscriptions, gRPC bidirectional streaming, and RAG-based AI data synthesis are planned update topics as beta onboarding progresses.</p>
+                            <a href="/mockforge-development-update-aug-2026.html" class="read-more">Preview Planned Update →</a>
+                        </div>
+                    </article>
 
-                    <div class="news-item">
-                        <div class="date">July 2026</div>
-                        <h3>Portfolio Update: Q2 2026</h3>
-                        <p>Hive Minded AI entered private pilot, MockForge shipped major protocol expansions, SaaSy Solutions grew its consulting pipeline, and CodeDig saw steady traction.</p>
-                        <a href="/q2-2026-portfolio-update.html" class="read-more">Read Full Update →</a>
-                    </div>
+                    <article class="update-row planned-update">
+                        <div class="date">Planned for July 2026</div>
+                        <div>
+                            <h3>Portfolio Update: Q2 2026</h3>
+                            <p>Quarter-end portfolio recap covering Hive Minded AI, MockForge, SaaSy Solutions, CodeDig, and HelloSaaSy.ai.</p>
+                            <a href="/q2-2026-portfolio-update.html" class="read-more">Preview Planned Update →</a>
+                        </div>
+                    </article>
 
-                    <div class="news-item">
-                        <div class="date">June 2026</div>
-                        <h3>Founder Note: Why Vertical AI</h3>
-                        <p>Why domain-specific AI beats horizontal solutions for niche industries like beekeeping, and what that means for how we build, hire, and prioritize.</p>
-                        <a href="/founder-note-vertical-ai-thesis.html" class="read-more">Read Full Note →</a>
-                    </div>
+                    <article class="update-row planned-update">
+                        <div class="date">Planned for June 2026</div>
+                        <div>
+                            <h3>Founder Note: Why Vertical AI</h3>
+                            <p>A planned founder note on why domain-specific AI matters for operationally deep markets like beekeeping.</p>
+                            <a href="/founder-note-vertical-ai-thesis.html" class="read-more">Preview Planned Note →</a>
+                        </div>
+                    </article>
 
-                    <div class="news-item">
+                    <article class="update-row">
                         <div class="date">May 2026</div>
-                        <h3>Hive Minded AI Launches Private Pilot</h3>
-                        <p>Hive Minded AI is now in private pilot with commercial beekeepers across the Midwest, covering roughly 2,400 hives.</p>
-                        <a href="/hive-minded-pilot-launch-q2-2026.html" class="read-more">Read Full Announcement →</a>
-                    </div>
+                        <div>
+                            <h3>Hive Minded AI Launches Private Pilot</h3>
+                            <p>Hive Minded AI is now in private pilot with commercial beekeepers across the Midwest, covering roughly 2,400 hives.</p>
+                            <a href="/hive-minded-pilot-launch-q2-2026.html" class="read-more">Read Full Announcement →</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -256,20 +299,20 @@
             <div class="container">
                 <div class="trust-grid">
                     <div class="trust-item">
-                        <div class="trust-badge">🏆</div>
+                        <div class="trust-badge">WOSB</div>
                         <div class="trust-label">Women-Owned Business</div>
                     </div>
                     <div class="trust-item">
-                        <div class="trust-badge">🚀</div>
-                        <div class="trust-label">Pre-Seed Stage</div>
+                        <div class="trust-badge">Pre-seed</div>
+                        <div class="trust-label">Current Stage</div>
                     </div>
                     <div class="trust-item">
-                        <div class="trust-badge">💼</div>
-                        <div class="trust-label">3 Companies + Active Assets</div>
+                        <div class="trust-badge">3 + assets</div>
+                        <div class="trust-label">Portfolio Structure</div>
                     </div>
                     <div class="trust-item">
-                        <div class="trust-badge">🌐</div>
-                        <div class="trust-label">Global Reach</div>
+                        <div class="trust-badge">EN markets</div>
+                        <div class="trust-label">Initial Market Focus</div>
                     </div>
                 </div>
             </div>
