@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400..700&display=swap"
         rel="stylesheet">
     <meta property="og:title" content="Contact SaaSier Inc - Get in Touch">
     <meta property="og:description"
@@ -252,28 +252,39 @@
     </main>
 
     <script>
-        // FAQ Accordion functionality
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const answer = button.nextElementSibling;
-                const icon = button.querySelector('.faq-icon');
-                const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-
-                // Close all other answers
-                document.querySelectorAll('.faq-answer').forEach(item => {
-                    item.style.maxHeight = '0px';
-                });
-                document.querySelectorAll('.faq-icon').forEach(item => {
-                    item.style.transform = 'rotate(0deg)';
-                });
-
-                // Toggle current answer
-                if (!isOpen) {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    icon.style.transform = 'rotate(45deg)';
+        // FAQ accordion — aria-driven; CSS animates height, `inert` hides collapsed content from tab order.
+        (function () {
+            const items = Array.from(document.querySelectorAll('.faq-item'));
+            items.forEach((item, i) => {
+                const btn = item.querySelector('.faq-question');
+                const ans = item.querySelector('.faq-answer');
+                if (!btn || !ans) return;
+                if (!ans.querySelector('.faq-answer-in')) {
+                    const inner = document.createElement('div');
+                    inner.className = 'faq-answer-in';
+                    while (ans.firstChild) inner.appendChild(ans.firstChild);
+                    ans.appendChild(inner);
                 }
+                ans.id = ans.id || 'faq-answer-' + (i + 1);
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-controls', ans.id);
+                ans.inert = true;
+
+                btn.addEventListener('click', () => {
+                    const willOpen = btn.getAttribute('aria-expanded') !== 'true';
+                    items.forEach(other => {
+                        const ob = other.querySelector('.faq-question');
+                        const oa = other.querySelector('.faq-answer');
+                        if (ob) ob.setAttribute('aria-expanded', 'false');
+                        if (oa) oa.inert = true;
+                    });
+                    if (willOpen) {
+                        btn.setAttribute('aria-expanded', 'true');
+                        ans.inert = false;
+                    }
+                });
             });
-        });
+        })();
     </script>
 
     <footer>
