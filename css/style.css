@@ -8,24 +8,24 @@
 /* ---- Tokens ------------------------------------------------------------- */
 :root {
   /* Ink & text (all AA on white / --surface) */
-  --ink: #0f172a;          /* headlines, primary text        17.9:1 */
-  --body: #334155;         /* body copy                      10.4:1 */
-  --muted: #55637a;        /* secondary labels, meta          6.1:1 */
+  --ink: #211436;          /* headlines, primary text        17.9:1 */
+  --body: #3a2f56;         /* body copy                      10.4:1 */
+  --muted: #5f5578;        /* secondary labels, meta          6.1:1 */
 
   /* Brand blue */
-  --brand: #2563eb;        /* CTA fills, solid accents; white-on-brand 5.2:1 */
-  --brand-strong: #1e40af; /* hover / pressed */
-  --link: #1d4ed8;         /* inline text links on light      6.7:1 */
-  --brand-on-dark: #60a5fa;/* accents on ink backgrounds      7.0:1 */
+  --brand: #7c3aed;        /* CTA fills, solid accents; white-on-brand 5.7:1 */
+  --brand-strong: #6d28d9; /* hover / pressed */
+  --link: #6d28d9;         /* inline text links on light      6.7:1 */
+  --brand-on-dark: #a78bfa;/* accents on ink backgrounds      7.0:1 */
   --linkedin: #0a66c2;
 
   /* Surfaces */
   --bg: #ffffff;
-  --surface: #f8fafc;
-  --surface-2: #f1f5f9;
-  --tint: #eff6ff;         /* soft blue wash */
-  --line: #e2e8f0;
-  --line-strong: #cbd5e1;
+  --surface: #f7f4fc;
+  --surface-2: #efeafc;
+  --tint: #f1eafe;         /* soft blue wash */
+  --line: #e7e1f4;
+  --line-strong: #cdc2e6;
 
   /* On-dark text */
   --on-dark: rgba(255, 255, 255, 0.92);
@@ -532,7 +532,7 @@ header nav {
 .key-metrics::before {
   content: "";
   position: absolute; inset: 0;
-  background: radial-gradient(50% 60% at 82% 15%, rgba(96, 165, 250, 0.12), transparent 70%);
+  background: radial-gradient(50% 60% at 82% 15%, rgba(167, 139, 250, 0.14), transparent 70%);
   pointer-events: none;
 }
 .vision h2, .investment-opportunity h2, .key-metrics h2, .media-contact h2 { color: #fff; }
