@@ -1,0 +1,44 @@
+{
+  "reviewed": "July 2026",
+  "fonts": {
+    "display": "Inter Display SemiBold/Bold",
+    "body": "Inter Regular/Medium/SemiBold",
+    "office_fallback": "Aptos",
+    "universal_fallback": "Arial"
+  },
+  "colors": {
+    "midnight_navy": "#071A36",
+    "founder_gold": "#D4AF4A",
+    "operating_slate": "#334155",
+    "cloud": "#F3F4F6",
+    "white": "#FFFFFF"
+  },
+  "social": {
+    "linkedin_company_current": {
+      "canvas": "4200x700",
+      "safe": "center 80%"
+    },
+    "linkedin_company_compatibility": {
+      "canvas": "1128x191"
+    },
+    "linkedin_personal": {
+      "canvas": "1584x396",
+      "note": "keep left area quiet"
+    },
+    "facebook_page": {
+      "canvas": "820x360",
+      "safe": "640x312 centered"
+    },
+    "x_header": {
+      "canvas": "1500x500"
+    },
+    "youtube_banner": {
+      "canvas": "2560x1440",
+      "safe": "1235x338 centered"
+    },
+    "instagram_profile": {
+      "canvas": "320x320",
+      "crop": "circle"
+    }
+  }
+}
