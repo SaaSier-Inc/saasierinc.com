@@ -16,6 +16,9 @@ Thumbs.db
 # Local config (if any)
 .local/
 
+# Claude Code project tooling (not site content; Pages deploys repo root)
+.claude/
+
 # Python cache files
 __pycache__/
 *.py[cod]
