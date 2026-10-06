@@ -7,7 +7,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 PROFILES = {
     "Macon Wright": ("Founder & CEO", "https://www.linkedin.com/in/macon-wright-125889104/"),
-    "Raymond Clanan": ("Co-founder & CTO", "https://www.linkedin.com/in/raymondclanan/"),
+    "Raymond Clanan": ("CTO", "https://www.linkedin.com/in/raymondclanan/"),
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
@@ -63,8 +63,13 @@ class LeadershipLinksTest(unittest.TestCase):
             for name, (role, url) in PROFILES.items():
                 with self.subTest(page=filename, person=name):
                     card = next(node for node in cards if name in node.all_text())
-                    expected_role = "CTO" if filename == "index.html" and name == "Raymond Clanan" else role
-                    self.assertIn(expected_role, card.all_text())
+                    role_node = next(
+                        node for node in card.descendants()
+                        if node.has_class("leader-role")
+                    ) if filename == "index.html" else next(
+                        node for node in card.descendants() if node.tag == "h4"
+                    )
+                    self.assertEqual(role_node.all_text().strip(), role)
                     links = [node for node in card.descendants() if node.tag == "a"]
                     self.assertEqual(len(links), 1)
                     self.assertEqual(links[0].attrs["href"], url)
@@ -73,9 +78,15 @@ class LeadershipLinksTest(unittest.TestCase):
                     self.assertTrue({"noopener", "noreferrer"} <= set(links[0].attrs["rel"].split()))
                     image = next(node for node in card.descendants() if node.tag == "img")
                     self.assertTrue((ROOT / image.attrs["src"]).is_file())
-                    if filename == "index.html" and name == "Raymond Clanan":
+                    if name == "Raymond Clanan":
                         self.assertEqual(image.attrs["alt"], "Raymond Clanan, CTO of SaaSier Inc")
-                        self.assertNotIn("co-founder", card.all_text().lower())
+                        if filename == "index.html":
+                            self.assertNotIn("co-founder", card.all_text().lower())
+                        else:
+                            self.assertIn(
+                                "Co-founder and Chief Technology Officer of SaaSy Solutions LLC",
+                                card.all_text(),
+                            )
 
     def test_company_footer_retains_company_identity(self):
         for filename in ("index.html", "about.html"):
