@@ -516,6 +516,7 @@ header nav {
 }
 .leadership > h3 { margin-bottom: 1.5rem; }
 .leader-profile { display: flex; align-items: center; gap: 1.5rem; }
+.leader-profile + .leader-profile { margin-top: 2rem; }
 .leader-image {
   width: 90px; height: 90px;
   border-radius: var(--r-full);
