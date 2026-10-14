@@ -11,7 +11,7 @@ We envision a future where specialized SaaS companies can thrive independently w
 - **Headquarters**: Franklin, Indiana, USA
 - **CEO & Founder**: Macon Wright
 - **Industry**: SaaS / Technology
-- **Certification**: Women-Owned Business
+- **Certification**: Woman-Owned Small Business. Federal WOSB certification in progress.
 
 ## Portfolio Companies
 1. **Hive Minded AI**: A bee keeping and apiary management AI-native application.
