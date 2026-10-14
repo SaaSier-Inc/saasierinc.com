@@ -7,6 +7,7 @@ from pathlib import Path
 PAGES = {
     "index.html": {"current": "home", "companies_href": "#portfolio"},
     "about.html": {"current": "about", "companies_href": "/#portfolio"},
+    "capability-statement.html": {"current": "capabilities", "companies_href": "/#portfolio"},
     "contact.html": {"current": "contact", "companies_href": "/#portfolio"},
     "investor-page.html": {"current": "investors", "companies_href": "/#portfolio"},
     "press.html": {"current": "press", "companies_href": "/#portfolio"},
@@ -30,6 +31,7 @@ NAV_ITEMS = [
     ("Home", "/", "home"),
     ("About", "/about.html", "about"),
     ("Companies", None, "companies"),
+    ("Capabilities", "/capability-statement.html", "capabilities"),
     ("Investors", "/investor-page.html", "investors"),
     ("Contact", "/contact.html", "contact"),
     ("Updates", "/updates.html", "updates"),
@@ -39,7 +41,7 @@ NAV_ITEMS = [
 FOOTER = """<footer>
     <div class="container">
         <p>&copy; 2026 SaaSier Inc. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> |
-            <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
+            <a href="/capability-statement.html">Capabilities</a> | <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
         </p>
         <div class="social-links">
             <a href="https://www.linkedin.com/company/saasierinc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

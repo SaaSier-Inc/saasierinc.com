@@ -16,6 +16,7 @@ Official static website for [SaaSier Inc.](https://saasierinc.com), the women-ow
 saasierinc.com/
 ├── index.html
 ├── about.html
+├── capability-statement.html
 ├── contact.html
 ├── press.html
 ├── investor-page.html
