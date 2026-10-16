@@ -1,7 +1,8 @@
 /*
  * PostHog analytics + AI-referral tagging.
  *
- * Inert until POSTHOG_KEY holds a real project key (PostHog project keys are
+ * The deploy workflow injects the key from the POSTHOG_KEY secret. Inert until
+ * POSTHOG_KEY holds a real project key (PostHog project keys are
  * public by design; they only allow sending events). While the value is the
  * placeholder, this file loads nothing and sends nothing.
  *
