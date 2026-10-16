@@ -14,9 +14,13 @@ We envision a future where specialized SaaS companies can thrive independently w
 - **Certification**: Woman-Owned Small Business. Federal WOSB certification in progress.
 
 ## Portfolio Companies
-1. **Hive Minded AI**: A bee keeping and apiary management AI-native application.
-2. **Mockforge**: Open-source platform for generating intelligent API mocks from OpenAPI specifications.
-3. **SaaSy Solutions**: Cloud-agnostic SaaS platform with advanced observability, security, and scalability features.
+1. **Hive Minded AI**: An intelligent operating system for modern beekeeping operations, from colony health to business outcomes.
+2. **MockForge**: Service virtualization across modern protocols with realistic behavior simulation for development, QA, and integration teams.
+3. **SaaSy Solutions LLC**: The consulting and implementation arm for commercial teams and government-ready buyers, backed by the Hello SaaSy platform.
+
+## Active Products and Emerging Assets
+- **CodeDig**: Live PR risk and blast-radius analysis for GitHub and GitLab. CodeDig is planned as its own company once the entity is set up.
+- **Hello SaaSy**: The AI back-office platform owned by SaaSy Solutions LLC: CRM, payroll, and compliance for service businesses. In open beta.
 
 ## Executive Leadership
 **Macon Wright** - *Founder & CEO*
