@@ -28,6 +28,23 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # The committed file keeps the placeholder (inert); the public PostHog
+      # project key is injected here from the POSTHOG_KEY secret.
+      - name: Inject PostHog key
+        env:
+          POSTHOG_KEY: ${{ secrets.POSTHOG_KEY }}
+        run: |
+          if [ -z "$POSTHOG_KEY" ]; then
+            echo "POSTHOG_KEY not set; analytics stays disabled."
+            exit 0
+          fi
+          if ! printf '%s' "$POSTHOG_KEY" | grep -Eq '^phc_[A-Za-z0-9]+$'; then
+            echo "POSTHOG_KEY is not a phc_ project key" >&2
+            exit 1
+          fi
+          sed -i "s/\"__POSTHOG_KEY__\"/\"$POSTHOG_KEY\"/" js/analytics.js
+          grep -q "\"$POSTHOG_KEY\"" js/analytics.js
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
