@@ -405,6 +405,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://saasierinc.com/#organization",
         "name": "SaaSier Inc",
         "description": "A women-owned portfolio company building focused software businesses in developer tooling, vertical AI, and shared SaaS platform infrastructure.",
         "url": "https://saasierinc.com",
@@ -412,6 +413,7 @@
         "foundingDate": "2025-11",
         "founder": {
             "@type": "Person",
+            "@id": "https://saasierinc.com/#macon-wright",
             "name": "Macon Wright",
             "jobTitle": "Founder & CEO",
             "description": "Leading the vision for SaaSier Inc with a focus on sustainable growth and technological excellence."
@@ -431,30 +433,54 @@
             "contactType": "General Inquiries"
         },
         "sameAs": ["https://www.linkedin.com/company/saasierinc"],
+        "subOrganization": [
+            {
+                "@type": "Organization",
+                "@id": "https://saasysolutionsllc.com/#organization",
+                "name": "SaaSy Solutions LLC",
+                "url": "https://saasysolutionsllc.com"
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://hiveminded.ai/#organization",
+                "name": "Hive Minded AI",
+                "url": "https://hiveminded.ai"
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://mockforge.dev/#organization",
+                "name": "MockForge",
+                "url": "https://mockforge.dev"
+            }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Portfolio Companies",
             "itemListElement": [
                 {
                     "@type": "Organization",
+                    "@id": "https://hiveminded.ai/#organization",
                     "name": "Hive Minded AI",
                     "description": "AI-native operating system for modern beekeeping operations.",
                     "url": "https://hiveminded.ai/"
                 },
                 {
                     "@type": "Organization",
+                    "@id": "https://mockforge.dev/#organization",
                     "name": "MockForge",
                     "description": "Service virtualization and realistic API simulation for development, QA, and integration teams.",
                     "url": "https://mockforge.dev/"
                 },
                 {
                     "@type": "Organization",
+                    "@id": "https://saasysolutionsllc.com/#organization",
                     "name": "SaaSy Solutions",
                     "description": "Consulting and implementation arm for commercial and government-ready buyers, backed by HelloSaaSy.ai.",
                     "url": "https://saasysolutionsllc.com/"
                 },
                 {
                     "@type": "SoftwareApplication",
+                    "@id": "https://codedig.ai/#software",
                     "name": "CodeDig",
                     "description": "Live PR risk and blast-radius analysis for GitHub and GitLab; planned as a future standalone company.",
                     "applicationCategory": "DeveloperApplication",
@@ -462,6 +488,7 @@
                 },
                 {
                     "@type": "SoftwareApplication",
+                    "@id": "https://hellosaasy.ai/#software",
                     "name": "HelloSaaSy.ai",
                     "description": "AI back-office platform owned by SaaSy Solutions LLC: CRM, payroll, and compliance for service businesses.",
                     "url": "https://hellosaasy.ai/"
