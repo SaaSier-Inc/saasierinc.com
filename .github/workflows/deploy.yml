@@ -36,3 +36,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Notify IndexNow (Bing, Yandex, etc.) of the published URLs. Best effort:
+      # a failure here never fails the deploy.
+      - name: Ping IndexNow
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: b7e4c2a9f1d84630a5c7e2b9d0f3a614
+        run: |
+          sleep 60
+          curl -fsSL --retry 3 --retry-delay 10 https://saasierinc.com/sitemap.xml -o sitemap.live.xml
+          urls=$(grep -o '<loc>[^<]*</loc>' sitemap.live.xml | sed -e 's/<loc>//' -e 's/<\/loc>//' | jq -R . | jq -sc .)
+          echo "Submitting $(echo "$urls" | jq length) URLs"
+          jq -n --arg key "$INDEXNOW_KEY" --argjson urls "$urls" \
+            '{host:"saasierinc.com", key:$key, keyLocation:("https://saasierinc.com/" + $key + ".txt"), urlList:$urls}' > indexnow.json
+          curl -sS -o /dev/null -w 'IndexNow HTTP %{http_code}\n' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data @indexnow.json
