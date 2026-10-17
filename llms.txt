@@ -1,0 +1,38 @@
+# SaaSier Inc
+
+> SaaSier Inc is a women-owned portfolio company building focused software businesses in developer tooling, vertical AI, and shared SaaS platform infrastructure.
+
+SaaSier Inc is a woman-owned holding company, wholly owned by Macon Wright, founded in November 2025 and based in Franklin, Indiana (28 E 200 N, Franklin, IN 46131). SAM.gov UEI: Q53XABAMNXD5. LinkedIn: https://www.linkedin.com/company/saasierinc
+
+## About
+
+- [About SaaSier Inc](https://saasierinc.com/about.html): How SaaSier Inc builds focused software companies with a shared operating platform, plus leadership.
+- [Capability Statement](https://saasierinc.com/capability-statement.html): Woman-owned Indiana S-corporation providing business operations consulting and applied AI services through SaaSy Solutions LLC; federal registration details.
+- [Press & Media Kit](https://saasierinc.com/press.html): Logos, press releases, company facts, and media contact.
+- [Investor Overview](https://saasierinc.com/investor-page.html): Portfolio structure, shared platform advantages, and current execution priorities.
+
+## Portfolio
+
+- [SaaSy Solutions LLC](https://saasysolutionsllc.com): The consulting and implementation arm for commercial teams and government-ready buyers, backed by the HelloSaaSy.ai platform. Operating subsidiary of SaaSier Inc.
+- [Hello SaaSy](https://hellosaasy.ai): The AI back-office platform owned by SaaSy Solutions LLC: CRM, payroll, and compliance for service businesses. In open beta.
+- [Hive Minded AI](https://hiveminded.ai): An intelligent operating system for modern beekeeping operations, from colony health to business outcomes.
+- [MockForge](https://mockforge.dev): Service virtualization across modern protocols with realistic behavior simulation for development, QA, and integration teams.
+- [CodeDig](https://codedig.ai): Live PR risk and blast-radius analysis for GitHub and GitLab. CodeDig is planned as its own company once the entity is set up.
+
+## Updates
+
+- [Portfolio Updates](https://saasierinc.com/updates.html): Latest portfolio updates across the holding company and its companies.
+- [Meet the Portfolio, Part One: SaaSy Solutions](https://saasierinc.com/meet-the-portfolio-saasy-solutions.html)
+- [Meet the Portfolio, Part Two: Hive Minded AI](https://saasierinc.com/meet-the-portfolio-hive-minded-ai.html)
+- [Meet the Portfolio, Part Three: Hello SaaSy](https://saasierinc.com/meet-the-portfolio-hello-saasy.html)
+- [Meet the Portfolio, Part Four: MockForge and CodeDig](https://saasierinc.com/meet-the-portfolio-mockforge-codedig.html)
+- [MockForge Development Update: Protocol Expansions and Beta Program](https://saasierinc.com/mockforge-development-update-aug-2026.html)
+- [Hive Minded AI Pilot Launch](https://saasierinc.com/hive-minded-pilot-launch-q2-2026.html)
+- [Founder Note: Why Vertical AI](https://saasierinc.com/founder-note-vertical-ai-thesis.html)
+- [Portfolio Update: Q2 2026](https://saasierinc.com/q2-2026-portfolio-update.html)
+- [Founder Note: Services-to-Product Flywheel](https://saasierinc.com/founder-note-services-to-product-flywheel.html)
+- [Strategic Milestone: Portfolio Operating System v1](https://saasierinc.com/portfolio-milestone-q1-2026-operating-system.html)
+- [Portfolio Update: Q1 2026 Progress](https://saasierinc.com/q1-2026-portfolio-update.html)
+- [Portfolio Update: Q4 2025](https://saasierinc.com/portfolio-update-q4-2025.html)
+- [Portfolio Update: Q3 2025](https://saasierinc.com/portfolio-update-q3-2025.html)
+- [Portfolio Update: Q2 2025](https://saasierinc.com/portfolio-update-q2-2025.html)
