@@ -80,11 +80,11 @@ class LeadershipLinksTest(unittest.TestCase):
                     self.assertTrue((ROOT / image.attrs["src"]).is_file())
                     if name == "Raymond Clanan":
                         self.assertEqual(image.attrs["alt"], "Raymond Clanan, CTO of SaaSier Inc")
-                        if filename == "index.html":
-                            self.assertNotIn("co-founder", card.all_text().lower())
-                        else:
+                        # Raymond is credited as CTO only, never co-founder (#13).
+                        self.assertNotIn("co-founder", card.all_text().lower())
+                        if filename == "about.html":
                             self.assertIn(
-                                "Co-founder and Chief Technology Officer of SaaSy Solutions LLC",
+                                "CTO of SaaSier Inc and its companies",
                                 card.all_text(),
                             )
 

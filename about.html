@@ -22,10 +22,11 @@
     <meta property="og:image" content="https://saasierinc.com/images/saasier-og.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self' mailto:">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://us-assets.i.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://us.i.posthog.com https://us-assets.i.posthog.com; base-uri 'self'; form-action 'self' mailto:">
     <link rel="icon" type="image/png" href="images/saasier-icon.png">
     <link rel="preload" as="image" href="images/saasier-logo.png">
     <link rel="preload" as="image" href="images/macon-wright.jpg">
+    <script src="/js/analytics.js" defer></script>
 </head>
 
 <body>
@@ -44,6 +45,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html" aria-current="page">About</a></li>
                 <li><a href="/#portfolio">Companies</a></li>
+                <li><a href="/capability-statement.html">Capabilities</a></li>
                 <li><a href="/investor-page.html">Investors</a></li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="/updates.html">Updates</a></li>
@@ -96,7 +98,7 @@
                         <div class="leader-info">
                             <h3>Raymond Clanan</h3>
                             <h4>CTO</h4>
-                            <p>Raymond Clanan is the Co-founder and Chief Technology Officer of SaaSy Solutions LLC, where he leads engineering across the company's portfolio. He brings more than 25 years of production experience in artificial intelligence, SaaS, and cloud infrastructure, and his product work spans Hello SaaSy, Hive Minded AI, CodeDig, and MockForge. He specializes in turning complicated operational problems into software that holds up in production. His standard for the portfolio is the same one behind the flagship platform: systems that run your business, and keep running.</p>
+                            <p>Raymond Clanan is the CTO of SaaSier Inc and its companies, where he leads engineering across the portfolio. He brings more than 25 years of production experience in artificial intelligence, SaaS, and cloud infrastructure, and his product work spans Hello SaaSy, Hive Minded AI, CodeDig, and MockForge. He specializes in turning complicated operational problems into software that holds up in production. His standard for the portfolio is the same one behind the flagship platform: systems that run your business, and keep running.</p>
                             <a href="https://www.linkedin.com/in/raymondclanan/" target="_blank" rel="noopener noreferrer" class="leader-linkedin" aria-label="Raymond Clanan on LinkedIn">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                                 Connect on LinkedIn
@@ -133,6 +135,9 @@
                     operational efficiency, and industry-specific workflows. From streamlining engineering work with
                     MockForge to improving apiary decision-making with Hive Minded AI, from CodeDig's PR risk analysis to HelloSaaSy.ai's reusable SaaS workflows, our products are designed to
                     create measurable operational value.</p>
+
+                <h2>Government and Supplier Information</h2>
+                <p>SaaSier Inc is SAM.gov registered with UEI Q53XABAMNXD5 and CAGE 1P0Z6. Its primary NAICS code is 551112, with services delivered through SaaSy Solutions LLC. SaaSier is a Woman-Owned Small Business; federal WOSB certification is in progress and not yet certified. Review the full <a href="/capability-statement.html">capability statement</a> for all registered NAICS codes, core competencies, and supplier contact details.</p>
                 <div class="next-step-panel">
                     <h2>Where to go next</h2>
                     <p>Explore the portfolio, review recent operating updates, or contact the team directly.</p>
@@ -158,7 +163,7 @@
     <footer>
     <div class="container">
         <p>&copy; 2026 SaaSier Inc. All rights reserved. | <a href="/">Home</a> | <a href="/about.html">About</a> |
-            <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
+            <a href="/capability-statement.html">Capabilities</a> | <a href="/contact.html">Contact</a> | <a href="/press.html">Press</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a>
         </p>
         <div class="social-links">
             <a href="https://www.linkedin.com/company/saasierinc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -185,6 +190,7 @@
             "name": "SaaSier Inc",
             "founder": {
                 "@type": "Person",
+                "@id": "https://saasierinc.com/#macon-wright",
                 "name": "Macon Wright",
                 "jobTitle": "Founder & CEO"
             }
